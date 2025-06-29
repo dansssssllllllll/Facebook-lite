@@ -1,0 +1,7 @@
+body { font-family: Arial; margin: 20px; background: #f0f2f5; }
+#login, #main { max-width: 600px; margin: auto; background: #fff; padding: 20px; border-radius: 10px; }
+input, textarea { width: 100%; margin-bottom: 10px; padding: 8px; }
+button { padding: 10px; margin-right: 5px; }
+.post { background: #fafafa; padding: 10px; margin-top: 10px; border-radius: 5px; }
+.comment { margin-left: 20px; font-size: 0.9em; color: #555; }
+.reactions span { cursor: pointer; margin-right: 5px; }

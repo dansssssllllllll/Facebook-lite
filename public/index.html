@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>SocialLite</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <div id="login">
+      <h2>Login / Signup</h2>
+      <input type="text" id="username" placeholder="Username" />
+      <input type="password" id="password" placeholder="Password" />
+      <button onclick="login()">Login</button>
+      <button onclick="signup()">Signup</button>
+    </div>
+
+    <div id="main" style="display:none;">
+      <h2>Welcome, <span id="displayUser"></span> <span id="badge"></span></h2>
+      <button onclick="logout()">Logout</button>
+      <div id="userInfo"></div>
+      <div id="adminPanel" style="display:none;">
+        <h3>Admin Panel</h3>
+        <button onclick="broadcast()">Broadcast Message</button>
+        <input type="text" id="broadcastMsg" placeholder="Message to all users" />
+        <div id="userList"></div>
+      </div>
+      <hr/>
+      <h3>Create Post</h3>
+      <textarea id="postText" placeholder="What's on your mind?"></textarea>
+      <input type="file" id="media" />
+      <button onclick="createPost()">Post</button>
+      <hr/>
+      <h3>Feed</h3>
+      <div id="feed"></div>
+      <hr/>
+      <h3>Inbox</h3>
+      <div id="inbox"></div>
+    </div>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
